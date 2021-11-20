@@ -1,9 +1,9 @@
-import bots.WCCBot
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.telegram.telegrambots.meta.TelegramBotsApi
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession
+import bots.WCCBot
 
 fun main() {
     val log: Logger = LoggerFactory.getLogger("main")
@@ -18,7 +18,7 @@ fun main() {
     try {
         botsApi.registerBot(WCCBot())
 
-        log.info("WCC Bot is up \\o/")
+        log.info("Yoda Bot is up \\o/")
     } catch (e: TelegramApiException) {
         e.printStackTrace()
 
